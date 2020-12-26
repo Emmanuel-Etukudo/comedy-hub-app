@@ -18,6 +18,8 @@ public class VideoPlayer extends YouTubeBaseActivity implements YouTubePlayer.On
     public static final String TAG = "VideoPlayer";
     static final String GOOGLE_API_KEY = "AIzaSyD3Wni74MkHpufMWJOp1doXwCSfqzG7fDE";
     static final String MACARONI_PLAYLIST = "UUxAkiUiL3KnMl0BIFBv6xxA";
+    static final String LIVELY_PLAYLIST = "UU47eU0u4OCMVr8PrVYjrRtg";
+    static final String SHAGGI_PLAYLIST = "UUG6orNVuXIICv9_ifH6msIA";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

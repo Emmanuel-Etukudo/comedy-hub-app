@@ -25,6 +25,8 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         btnShaggi = findViewById(R.id.btnShaggi);
 
         btnMacaroni.setOnClickListener(this);
+        btnLively.setOnClickListener(this);
+        btnShaggi.setOnClickListener(this);
     }
 
     @Override
@@ -33,11 +35,13 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
 
         switch (view.getId()) {
             case R.id.btnMacaroni:
-                intent = YouTubeStandalonePlayer.createPlaylistIntent(Dashboard.this, VideoPlayer.GOOGLE_API_KEY, VideoPlayer.MACARONI_PLAYLIST, 0, 0, true, true);
+                intent = YouTubeStandalonePlayer.createPlaylistIntent(Dashboard.this, VideoPlayer.GOOGLE_API_KEY, VideoPlayer.MACARONI_PLAYLIST, 0, 0, false, true);
                 break;
             case R.id.btnLively:
+                intent = YouTubeStandalonePlayer.createPlaylistIntent(Dashboard.this, VideoPlayer.GOOGLE_API_KEY, VideoPlayer.LIVELY_PLAYLIST, 0, 0, false, true);
                 break;
             case R.id.btnShaggi:
+                intent = YouTubeStandalonePlayer.createPlaylistIntent(Dashboard.this, VideoPlayer.GOOGLE_API_KEY, VideoPlayer.SHAGGI_PLAYLIST, 0, 0, false, true);
                 break;
 
             default:

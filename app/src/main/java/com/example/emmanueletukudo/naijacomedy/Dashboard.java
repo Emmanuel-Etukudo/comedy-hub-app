@@ -24,28 +24,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         btnLively = findViewById(R.id.btnLively);
         btnShaggi = findViewById(R.id.btnShaggi);
 
-
-       /* btnMacaroni.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = null;
-            intent = YouTubeStandalonePlayer.createPlaylistIntent(Dashboard.this, VideoPlayer.GOOGLE_API_KEY,VideoPlayer.MACARONI_PLAYLIST,0,0,true,true);
-            }
-        });
-
-        btnLively.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
-        btnShaggi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });*/
+        btnMacaroni.setOnClickListener(this);
     }
 
     @Override
